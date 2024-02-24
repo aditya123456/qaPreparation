@@ -1,0 +1,76 @@
+What are different services in AWS?
+
+Amazon EC2
+Create and run virtual servers in the cloud
+
+Amazon EC2 provides the following high-level features:
+
+Instances
+Virtual servers.
+
+Amazon Machine Images (AMIs)
+Preconfigured templates for your instances that package the components you need for your server (including the operating system and additional software).
+
+Instance types
+Various configurations of CPU, memory, storage, networking capacity, and graphics hardware for your instances.
+
+Key pairs
+Secure login information for your instances. AWS stores the public key and you store the private key in a secure place.
+
+Instance store volumes
+Storage volumes for temporary data that is deleted when you stop, hibernate, or terminate your instance.
+
+Amazon EBS volumes
+Persistent storage volumes for your data using Amazon Elastic Block Store (Amazon EBS).
+
+Regions, Availability Zones, Local Zones, AWS Outposts, and Wavelength Zones
+Multiple physical locations for your resources, such as instances and Amazon EBS volumes.
+
+Security groups
+A virtual firewall that allows you to specify the protocols, ports, and source IP ranges that can reach your instances, and the destination IP ranges to which your instances can connect.
+
+Elastic IP addresses
+Static IPv4 addresses for dynamic cloud computing.
+
+Tags
+Metadata that you can create and assign to your Amazon EC2 resources.
+
+Virtual private clouds (VPCs)
+Virtual networks you can create that are logically isolated from the rest of the AWS Cloud. You can optionally connect these virtual networks to your own network.
+
+
+Amazon S3
+Object storage built to retrieve any amount of data from anywhere
+Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.
+ Customers of all sizes and industries can use Amazon S3 to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics. Amazon S3 provides management features so that you can optimize, organize, and configure access to your data to meet your specific business, organizational, and compliance requirements.
+
+Amazon DynamoDB
+Managed NoSQL database service
+
+Amazon RDS
+Set up, operate, and scale a relational database in the cloud
+Amazon Relational Database Service (Amazon RDS) is a web service that makes it easier to set up, operate, and scale a relational database in the AWS Cloud.
+ It provides cost-efficient, resizable capacity for an industry-standard relational database and manages common database administration tasks.
+
+AWS Lambda
+Run code without thinking about servers
+AWS Lambda is a compute service that lets you run code without provisioning or managing servers.
+def lambda_handler(event, context):
+    message = 'Hello {} {}!'.format(event['first_name'], event['last_name'])
+    return {
+        'message' : message
+    }
+
+Lambda runs your code on a high-availability compute infrastructure and performs all of the administration of the compute resources, including server and operating system maintenance, capacity provisioning and automatic scaling, and logging.
+With Lambda, all you need to do is supply your code in one of the language runtimes that Lambda supports.
+
+Amazon VPC
+Isolated cloud resources
+
+
+https://aws.amazon.com/blogs/devops/serverless-ui-testing-using-selenium-aws-lambda-aws-fargate-and-aws-developer-tools/
+
+
+https://aws.amazon.com/blogs/devops/integrating-aws-device-farm-with-ci-cd-pipeline-to-run-cross-browser-selenium-tests/
+
+https://aws.amazon.com/blogs/devops/using-aws-codepipeline-aws-codebuild-and-aws-lambda-for-serverless-automated-ui-testing/
